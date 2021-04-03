@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="assests/css/style.css" >
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>Hello, world!</title>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     <script>
+     $(document).ready(function() {
+      $( function() {
+        $( "#dialog" ).dialog({
+          autoOpen: false,
+          show: {
+            effect: "blind",
+            duration: 1000
+          },
+          hide: {
+            effect: "explode",
+            duration: 1000
+          }
+        });
+     
+        $( "#sub" ).on( "click", function() {
+          if($("#msg").val().length > 0){
+            $( "#dialog" ).dialog( "open" );
+            $("#msg").val("")
+          } else {
+            alert("Please provide all Field")
+          }
+        });
+      } );
+      $("#click4").on('click', function(){
+        $(".card4").css('background-color', 'red')
+        $(".card-body4").html('<div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div> <h4 class="card-text">We will Redirect you to Jquery Home page within 3 seconds</h4>')
+        setInterval(function(){
+          window.location.href = "http://www.w3schools.com";
+        }, 3000)
+      })
+      $("#click1").on('click', function(){
+        $(".card1").css('background-color', 'red')
+        $(".card-body1").html('<div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div> <h4 class="card-text">We will Redirect you to HTML Home page within 3 seconds</h4>')
+        setInterval(function(){
+          window.location.href = "https://www.w3schools.com/howto/howto_website.asp";
+        }, 3000)
+      })
+      $("#click2").on('click', function(){
+        $(".card2").css('background-color', 'red')
+        $(".card-body2").html('<div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div> <h4 class="card-text">We will Redirect you to Python Home page within 3 seconds</h4>')
+        setInterval(function(){
+          window.location.href = "https://www.python.org/";
+        }, 3000)
+      })
+      $("#click3").on('click', function(){
+        $(".card3").css('background-color', 'red')
+        $(".card-body3").html('<div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div> <h4 class="card-text">We will Redirect you to Javascript Home page within 3 seconds</h4>')
+        setInterval(function(){
+          window.location.href = "https://www.javascript.com/";
+        }, 3000)
+      })
+     })
+      </script>
+  </head>
+  <body>
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="#"><span id="initial">K</span>aran Bhanushali</a>
+            
+          </nav>
+
+     <div class="row">
+
+      <div class="col-lg-6 col-xs-12 head">
+        <h1>Hello</h1>
+        <h2>I'm karan</h2>
+        <h2>Learning Fullstack </h2>
+        <h2>Developer at ItVedant.</h2>
+      </div>
+
+      <div class="col-lg-6 col-xs-12 head1">
+        <img src="assests/images/p1.jpg" class="img-fluid" width="500px" height="500px" />
+      </div>
+     </div>
+
+     <div class="container-fluid sec">
+       <div class="row">
+        <div class="col-lg-6 col-xs-12 head2">
+          <img src="assests/images/web.webp" class="img-fluid" />
+        </div>
+ 
+        <div class="col-lg-6 col-xs-12 head3">
+          <h1>I can help you with</h1>
+          <ul class="list-group">
+            <li class="list-group-item">A Responsive Website</li>
+            <li class="list-group-item">To grow your Business</li>
+            <li class="list-group-item">Help in Web designing</li>
+            <li class="list-group-item">To bring your business online</li>
+          </ul>
+        </div>
+       </div>
+     </div>
+
+     <div class="row sec1">
+
+       <div class="col-lg-3 col-xs-12">
+        <div class="card card1">
+          <div class="card-body card-body1">
+            <h3 class="card-title">HTML</h3>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="card-text">Html and CSS is basic of Web Designing. If you want know deep in html </p>
+            <button id="click1" class="btn">Click here</button>>
+          </div>
+        </div>
+       </div>
+
+       <div class="col-lg-3 col-xs-12">
+        <div class="card card2">
+          <div class="card-body card-body2">
+            <h3 class="card-title">Python</h3>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="card-text">Python is Object Oriented Programming Language. To know more</p>
+            <button id="click2" class="btn">Click here</button>>
+          </div>
+        </div>
+       </div>
+
+       <div class="col-lg-3 col-xs-12">
+        <div class="card card3">
+          <div class="card-body card-body3">
+            <h3 class="card-title">Javascript</h3>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="card-text">Javascript is next Level for Web Designing after HTML. To know more</p>
+            <button id="click3" class="btn">Click here</button>>
+          </div>
+        </div>
+       </div>
+
+       <div class="col-lg-3 col-xs-12">
+        <div class="card card4">
+          <div class="card-body card-body4">
+            <h3 class="card-title">Jquery</h3>
+            <h2 id="inner"></h2>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="card-text">Jquery also bring some special module like js but in simplified format..</p>
+            <button id="click4" class="btn">Click here</button>>
+          </div>
+        </div>    
+     </div>
+  
+     </div>
+     </div>
+
+     <div class="container-fluid sec2">
+      <div class="row">
+        <div class="col-lg-6 head4">
+         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+           <ol class="carousel-indicators">
+             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+           </ol>
+           <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img src="assests/images/p1.jpg" class="d-block w-100" alt="...">
+             </div>
+             <div class="carousel-item">
+               <img src="assests/images/p1.jpg" class="d-block w-100" alt="...">
+             </div>
+             <div class="carousel-item">
+               <img src="assests/images/p1.jpg" class="d-block w-100" alt="...">
+             </div>
+           </div>
+           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+           </a>
+           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="sr-only">Next</span>
+           </a>
+         </div>
+        </div>
+ 
+        <div class="col-lg-6 head5">
+          <h2>Please drop your email for any Query.</h2>
+          <form>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="msg">Message</label>
+              <input type="text" class="form-control" id="msg">
+            </div>
+          </form>
+          <button onclick="onSub()" id="sub" class="btn btn-primary btn-block">Submit</button>
+        </div>
+      </div>
+     </div>
+
+    </div>
+    <div id="dialog" title="Email Sent!">
+      <p>Your message has been sent. We will contact you soon.</p>
+    </div>
+
+    <div class="footer">
+      <h1>&#169; 2021 All Rights are Reserved by Karan Bhanushali.</h1>
+      <div class="icon">
+        <i class="fab fa-facebook-f" style="color: #fff; font-size: 40px;"></i>
+        <i class="fab fa-instagram" style="color: #fff; font-size: 40px; margin-left: 20px; margin-right: 20px;"></i>
+        <i class="fab fa-twitter" style="color: #fff; font-size: 40px;"></i>
+      </div>
+    </div>
+  </body>
+</html>
